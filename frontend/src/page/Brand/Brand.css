@@ -1,0 +1,241 @@
+/* -------------------------------Thương Hiệu-------------------------------- */
+
+.body-th {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .brand-intro h2,
+  .brand-history h2,
+  .brand-mission h2 {
+    font-family: MonteCarlo;
+    font-size: 50px;
+    color: #004168;
+    margin-bottom: 20px;
+  }
+  
+  .brand-intro p,
+  .brand-mission p {
+    font-size: 20px;
+    color: #004168;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  
+  .history-timeline {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Ensure items wrap on smaller screens */
+  }
+  
+  .timeline-item {
+    width: 30%;
+    padding: 20px;
+  }
+  
+  .timeline-item h3 {
+    text-shadow: 1px 1px 2px rgba(255, 244, 185, 0.7);
+    text-align: start;
+    font-size: 23px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #EFD099;
+  }
+  
+  .timeline-item p {
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #004168;
+  }
+  
+  .history {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .right-line {
+    width: 40%;
+    margin-left: 50px;
+    height: 1.5px;
+    background-color: var(--yellow);
+    z-index: 1;
+  }
+  
+  .history-1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .left-line {
+    width: 40%;
+    margin-right: 50px;
+    height: 1.5px;
+    background-color: var(--yellow);
+    z-index: 1;
+  }
+  
+  .brand-mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Ensure content wraps on smaller screens */
+  }
+  
+  .text-section {
+    width: 50%;
+    padding: 20px 0;
+  }
+  
+  .text-section h2 {
+    font-family: MonteCarlo;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #004168;
+  }
+  
+  .text-section p {
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #004168;
+  }
+  
+  .image-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    max-width: 559px;
+    height: 422px;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+  }
+  
+  .core-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 560px;
+  }
+  
+  .core-value-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .core-value-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay-text-th {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .column-1 {
+    grid-row: span 2;
+    height: 100%;
+  }
+  
+  .column-2-top,
+  .column-2-bottom {
+    grid-row: span 1;
+    height: 100%;
+  }
+  
+  .divider-1 {
+    width: 60%;
+    border: 0;
+    height: 1.5px;
+    background-color: #f5d6a7;
+    margin: 60px auto;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 100%;
+      /* Full width on smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .text-section,
+    .image-section {
+      width: 100%;
+      /* Stack sections */
+    }
+  
+    .brand-mission {
+      flex-direction: column;
+      /* Stack brand mission items */
+      align-items: flex-start;
+    }
+  
+    .core-values-grid {
+      grid-template-columns: repeat(2, 1fr);
+      /* 2 columns on smaller screens */
+      grid-template-rows: auto;
+      /* Allow rows to adapt to content */
+    }
+  
+    /* Ensure the first item still spans 2 columns */
+    .column-1 {
+      grid-column: span 2;
+      /* First item spans 2 columns */
+    }
+  
+    .core-value-item {
+      height: auto;
+      /* Allow height to adjust automatically */
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    .brand-intro h2,
+    .brand-history h2,
+    .brand-mission h2 {
+      font-size: 32px;
+      /* Reduce font size for mobile */
+    }
+  
+    .brand-intro p,
+    .brand-mission p,
+    .timeline-item p {
+      font-size: 16px;
+      /* Reduce font size for mobile */
+      text-align: justify;
+    }
+  
+    .divider-1 {
+      margin: 30px auto;
+      /* Adjust margin for mobile */
+    }
+  }

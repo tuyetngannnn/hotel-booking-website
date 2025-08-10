@@ -1,0 +1,261 @@
+/* -----------------------------------------Chi tiết phòng---------------------------------------- */
+@import "../../App.css";
+
+.body-room-detail {
+  margin: 135px auto;
+  width: 80%;
+  text-align: center;
+  height: auto;
+}
+
+/* Thông tin phòng */
+.room-detail-info {
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 400;
+  color: #162f4a;
+  margin-bottom: 420px;
+}
+
+/* Container cho ảnh và thông tin phòng */
+.room-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.room-image {
+  width: 655px;
+  height: 848px;
+  border-radius: 15px;
+}
+
+/* Khung thông tin nằm đè lên ảnh */
+.room-details-overlay {
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  width: 558px;
+  height: 1030px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 3px solid #efd099;
+  /* Đường viền vàng nhẹ */
+  z-index: 10;
+  /* Để đảm bảo nó nằm trên ảnh */
+}
+
+.room-details-overlay h2 {
+  font-size: 35px;
+  color: #004168;
+  font-weight: bold;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+.room-details-overlay ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 80px;
+}
+
+.room-details-overlay li {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #162f4a;
+  font-family: "Raleway";
+  text-align: start;
+  /* -webkit-text-stroke: 0.2px #EFD099; */
+}
+
+.room-details-overlay li strong {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #162f4a;
+  font-family: "Raleway";
+  text-align: start;
+  /* -webkit-text-stroke: 0.2px #EFD099; */
+}
+
+.room-details-overlay button {
+  background-color: #efd099;
+  padding: 10px 20px;
+  border: none;
+  margin-left: 230px;
+  margin-top: 15px;
+  width: 250px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Raleway";
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.room-details-overlay button:hover {
+  background-color: #162f4a;
+  color: #efd099;
+}
+
+.slider-rooms {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.slick-arrow {
+  display: none;
+}
+
+.slick-arrow::before {
+  display: none;
+}
+
+.image-carousel-room-detail {
+  justify-content: center;
+  margin: 40px;
+}
+
+
+/* Màn hình máy tính bảng lớn (tối đa 1024px) */
+@media (max-width: 1024px) {
+  .body-room-detail {
+    width: 90%;
+  }
+
+  .room-image {
+    width: 500px;
+    height: 700px;
+  }
+
+  .room-details-overlay {
+    width: 450px;
+    height: auto;
+    right: 5%;
+    padding: 15px;
+  }
+
+  .room-details-overlay h2 {
+    font-size: 30px;
+  }
+
+  .room-details-overlay ul {
+    margin: 20px 40px;
+  }
+
+  .room-details-overlay li {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .room-details-overlay button {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    margin-left: 150px;
+  }
+
+  .slider-rooms {
+    height: 200px;
+  }
+}
+
+/* Màn hình máy tính bảng nhỏ và điện thoại lớn (tối đa 768px) */
+@media (max-width: 768px) {
+  .body-room-detail {
+    width: 95%;
+    margin: 50px auto;
+  }
+
+  .room-image-container {
+    max-width: 100%;
+  }
+
+  .room-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .room-details-overlay {
+    position: relative;
+    width: 100%;
+    height: auto;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+  }
+
+  .room-details-overlay h2 {
+    font-size: 28px;
+  }
+
+  .room-details-overlay ul {
+    margin: 20px 20px;
+  }
+
+  .room-details-overlay li {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .room-details-overlay button {
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider-rooms {
+    height: 180px;
+  }
+
+  .room-detail-info {
+    margin-bottom: 30px;
+  }
+}
+
+/* Màn hình điện thoại nhỏ (tối đa 468px) */
+@media (max-width: 468px) {
+  .body-room-detail {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .room-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .room-details-overlay h2 {
+    font-size: 24px;
+  }
+
+  .room-details-overlay ul {
+    margin: 15px 10px;
+  }
+
+  .room-details-overlay li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .room-details-overlay button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  .slider-rooms {
+    height: 150px;
+  }
+
+  .room-detail-info {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,84 @@
+.avatar-container-admin {
+    position: relative; /* Đảm bảo dropdown được định vị tương đối với avatar */
+    display: flex;
+    align-items: center;
+    background-color: #004168;
+    padding: 10px 20px;
+    border-radius: 55px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .avatar-container-admin:hover {
+    background-color: #00324e; /* Thay đổi màu nền khi hover */
+  }
+  
+  .avatar-img-admin {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px; /* Khoảng cách giữa ảnh avatar và phần text */
+  }
+  
+  .user-info-admin {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 15px; /* Khoảng cách giữa thông tin và icon dropdown */
+  }
+  
+  .user-info-admin .name-admin {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Raleway';
+    color: #EFD099;
+  }
+  
+  .user-info-admin .role-admin {
+    font-size: 14px;
+    color: #f0e5d7;
+    font-family: 'Raleway';
+  }
+  
+  /* Dropdown icon */
+  .dropdown-icon-admin {
+    transition: transform 0.3s ease-in-out;
+    color: #EFD099;
+  }
+  
+  .dropdown-icon-admin.rotate {
+    transform: rotate(180deg); /* Xoay icon 180 độ khi mở dropdown */
+  }
+  
+  .dropdown-menu-admin {
+    position: absolute;
+    top: 115%; /* Khoảng cách từ avatar đến dropdown */
+    right: 4px;
+    background-color: #FEF8E8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: none; /* Ẩn mặc định */
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-admin.active {
+    display: block; /* Hiển thị khi active */
+  }
+  
+  .dropdown-item-admin p{
+    padding: 10px 20px;
+    color: #004168;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif; /* Thêm sans-serif cho font fallback */
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap; /* Không xuống dòng */
+  }
+  
+  .dropdown-item-admin:hover {
+    background-color: #EFD099; /* Màu nền khi hover */
+  }
+  

@@ -1,0 +1,231 @@
+/* Đặt bố cục 2 cột với flexbox */
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 40px);
+}
+
+/* Top bar */
+.top-bar-admin {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.room-manager-content {
+  flex-grow: 1;
+  padding: 20px;
+  border: solid 1.5px #EFD099;
+  border-radius: 20px;
+  margin-left: 272px;
+  overflow-y: auto;
+  height: calc(100vh - 40px);
+}
+
+/* Tùy chỉnh thanh cuộn */
+.room-manager-content::-webkit-scrollbar {
+  width: 8px; /* Độ rộng của thanh cuộn */
+}
+
+.room-manager-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của đường đi thanh cuộn */
+  border-radius: 4px; /* Bo góc cho đường đi */
+}
+
+
+.room-manager-content::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1; /* Màu của thanh cuộn */
+  border-radius: 4px; /* Bo góc cho thanh cuộn */
+  border: 2px solid #f1f1f1; /* Khoảng cách giữa thanh cuộn và đường đi */
+}
+
+
+.room-manager-content::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8; /* Màu của thanh cuộn khi hover */
+}
+
+.room-manager-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #004168;
+  margin-bottom: 20px;
+  font-family: 'Platfair Display';
+  text-align: center;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 10px;
+  font-family: 'Monserrat';
+  font-size: 18px;
+  color: #004168;
+  border-bottom: 1px solid #EFD099;
+  height: 70px;
+}
+
+.booking-table th {
+  background-color: #EFD099;
+  color: #004168;
+  font-family: 'Raleway';
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+  height: 60px;
+}
+
+.booking-table td {
+  text-align: center;
+}
+
+/* Specific to the first and last header cells */
+.booking-table th:first-child {
+  border-top-left-radius: 8px;
+  /* Top-left corner rounding */
+}
+
+.booking-table th:last-child {
+  border-top-right-radius: 8px;
+  /* Top-right corner rounding */
+}
+
+.btn-detail-booking {
+  border: solid 2px #EFD099;
+  /* background-color: #EFD099; */
+  color: #004168;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Monserrat';
+}
+
+.btn-detail-booking:hover {
+  background-color: #EFD099;
+  color: #004168;
+}
+
+.detail-booking-admin {
+  padding: 0 70px;
+}
+
+.detail-booking-admin strong {
+  font-weight: 700;
+  color: #004168;
+}
+
+.detail-booking-admin p {
+  font-size: 20px;
+  font-family: "Monserrat";
+  color: #004168;
+  margin: 20px 0;
+}
+
+.btn-booking-admin {
+  background-color: #EFD099;
+  color: #004168;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Playfair Display';
+}
+
+.btn-booking-admin:hover {
+  background-color: #004168;
+  color: white;
+}
+
+.btn-huy-detail-admin {
+  border: solid 2px #ff1414;
+  background-color: transparent;
+  color: #ff1414;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
+}
+
+.btn-huy-detail-admin:hover {
+  background-color: #ff1414;
+  color: white;
+}
+
+.btn-xacnhan-detail-admin {
+  margin-right: 30px;
+  border: solid 2px #00cc25;
+  background-color: transparent;
+  color: #00cc25;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
+}
+
+.btn-xacnhan-detail-admin:hover {
+  background-color: #00cc25;
+  color: white;
+}
+
+.booking-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+
+.booking-detail-table td {
+  padding: 10px;
+  font-family: 'Monserrat';
+  font-size: 18px;
+  color: #004168;
+  border-bottom: 1px solid #EFD099;
+}
+
+.booking-detail-table td {
+  text-align: start;
+}
+
+.btn-content {
+  margin: 35px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button-group-invoice {
+  gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.btn-checkin-out {
+  flex: 1;
+  padding: 10px;
+  /* background-color: #004168; */
+  color: #004168;
+  border: solid 2px #004168;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-checkin-out:hover {
+  background-color: #FEF8E8;
+  color: #004168;
+}
+
+.btn-checkin-out.active {
+  background-color: #004168;
+  color: white;
+}

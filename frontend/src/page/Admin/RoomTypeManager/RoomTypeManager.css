@@ -1,0 +1,199 @@
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+}
+
+/* Top bar */
+.top-bar-admin {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.room-manager-content {
+    flex-grow: 1;
+    padding: 20px;
+    border: solid 1.5px #EFD099;
+    border-radius: 20px;
+    margin-left: 272px;
+    overflow-y: auto;
+    height: calc(100vh - 40px);
+}
+
+.room-manager-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #004168;
+    margin-bottom: 20px;
+    font-family: 'Platfair Display';
+    text-align: center;
+}
+
+.add-room-btn-container {
+    text-align: right;
+    /* Aligns the button to the right */
+    margin-bottom: 20px;
+    /* Adds some space between the button and the table */
+}
+
+.btn-add-room {
+    background-color: #014f86;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.btn-add-room:hover {
+    background-color: #EFD099;
+    color: #004168;
+}
+
+.room-table-type {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+.room-table-type th,
+.room-table-type td {
+    padding: 10px;
+    font-family: 'Monserrat';
+    font-size: 16px;
+    color: #004168;
+    text-align: center;
+    border-bottom: 1px solid #EFD099;
+}
+
+.room-table-type td button .icon-edit-delete {
+    color: #004168;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.room-table-type td button:hover .icon-edit-delete {
+    color: #EFD099;
+}
+
+.icon-buttons-edit-delete {
+    display: flex;
+    flex-direction: column;
+    /* Stack icons vertically */
+    align-items: center;
+    /* Center align icons */
+}
+
+.room-table-type th {
+    background-color: #EFD099;
+    color: #004168;
+    font-family: 'Raleway';
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+    height: 60px;
+}
+
+/* Specific to the first and last header cells */
+.room-table-type th:first-child {
+    border-top-left-radius: 8px;
+    /* Top-left corner rounding */
+}
+
+.room-table-type th:last-child {
+    border-top-right-radius: 8px;
+    /* Top-right corner rounding */
+}
+
+.modal-overlay-type {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content-type {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 600px;
+    max-width: 90%;
+    border: 3px solid #EFD099;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+.modal-title-type {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #004168;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.label-text-type {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Raleway';
+    color: #004168;
+    margin-bottom: 5px;
+}
+
+.modal-input-type {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #004168;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal-submit-button-type {
+    background-color: #004168;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Raleway';
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-submit-button-type:hover {
+    background-color: #EFD099;
+    color: #004168;
+}
+
+.close-icon-type {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #004168;
+    background: none;
+    border: none;
+}
+
+.close-icon-type:hover {
+    color: #EFD099;
+}

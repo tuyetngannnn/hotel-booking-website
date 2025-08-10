@@ -1,0 +1,170 @@
+.body-room {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .text-content-body-1 {
+    margin: 50px 0;
+    color: #162F4A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+  
+  .kq-room-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  .kq-room-item {
+    border: 2px solid #EFD099;
+    width: 558px;
+    /* Chiều rộng cố định */
+    height: 671px;
+    /* Chiều cao cố định */
+    overflow: hidden;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.2s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Phân chia nội dung đều */
+  }
+  
+  .kq-room-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .kq-room-image {
+    width: 100%;
+    height: 302px;
+    /* Chiều cao cố định cho ảnh */
+    object-fit: cover;
+    /* Giữ tỷ lệ ảnh và cắt phần dư */
+  }
+  
+  .kq-room-title {
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #162F4A;
+    text-transform: uppercase;
+  }
+  
+  .kq-room-description {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+    color: #162F4A;
+  }
+
+   /* Thông tin phòng */
+   .kq-room-info {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+    color: #162F4A;
+    margin: 8px 0;
+  }
+  
+  .kq-book-button {
+    background-color: #EFD099;
+    color: #162f4a;
+    height: 45px;
+    width: 250px;
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    align-self: center;
+  }
+  
+  .kq-book-button:hover {
+    background-color: #162F4A;
+    color: #EFD099;
+  }
+
+/* Màn hình máy tính bảng lớn (tối đa 1024px) */
+@media (max-width: 1024px) {
+  .body-room {
+      width: 90%;
+  }
+
+  .kq-room-grid {
+      grid-template-columns: 1fr; /* Chuyển sang 1 cột */
+      gap: 30px;
+  }
+
+  .kq-room-item {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Màn hình máy tính bảng nhỏ và điện thoại lớn (tối đa 768px) */
+@media (max-width: 768px) {
+  .body-room {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .text-content-body-1 {
+      font-size: 30px;
+  }
+
+  .kq-room-title {
+      font-size: 22px;
+  }
+
+  .kq-room-description,
+  .kq-room-info {
+      font-size: 18px;
+  }
+
+  .kq-book-button {
+      width: 200px;
+      font-size: 18px;
+  }
+}
+
+/* Màn hình điện thoại nhỏ (tối đa 468px) */
+@media (max-width: 468px) {
+  .body-room {
+      padding: 10px;
+  }
+
+  .text-content-body-1 {
+      font-size: 25px;
+  }
+
+  .kq-room-title {
+      font-size: 20px;
+  }
+
+  .kq-room-description,
+  .kq-room-info {
+      font-size: 16px;
+  }
+
+  .kq-book-button {
+      width: 100%;
+      font-size: 16px;
+      padding: 8px 10px;
+  }
+}

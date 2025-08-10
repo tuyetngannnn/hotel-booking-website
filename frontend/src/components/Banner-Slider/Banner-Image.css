@@ -1,0 +1,48 @@
+.banner-slider {
+    position: relative; /* Để định vị các phần tử con */
+    overflow: hidden; /* Ẩn các phần tử tràn ra ngoài */
+}
+
+.slick-dots {
+    position: absolute; /* Đặt vị trí tuyệt đối cho dots */
+    bottom: 20px; /* Điều chỉnh khoảng cách từ dưới lên */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Giúp căn giữa chính xác */
+    z-index: 1; /* Đặt z-index cao để dots không bị ẩn dưới hình ảnh */
+}
+
+.slick-dots li button:before {
+    font-size: 12px; /* Kích thước điểm */
+    color: gray; /* Màu sắc cho dots */
+}
+
+.slick-dots li.slick-active button:before {
+    color: white; /* Màu sắc cho dot đang được chọn */
+}
+
+.banner-slider img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+    height: 623px; /* Để chiều cao tự động điều chỉnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .slick-dots {
+        bottom: 15px; /* Giảm khoảng cách từ dưới lên cho màn hình nhỏ hơn */
+    }
+
+    .slick-dots li button:before {
+        font-size: 10px; /* Giảm kích thước dots cho màn hình nhỏ */
+    }
+}
+
+@media (max-width: 480px) {
+    .slick-dots {
+        bottom: 10px; /* Giảm khoảng cách từ dưới lên cho màn hình rất nhỏ */
+    }
+
+    .slick-dots li button:before {
+        font-size: 8px; /* Giảm kích thước dots cho màn hình rất nhỏ */
+    }
+}

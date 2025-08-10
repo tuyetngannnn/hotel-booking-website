@@ -1,0 +1,687 @@
+@import "../../App.css";
+:root {
+  --blue: #162f4a;
+  --yellow: #efd099;
+}
+
+
+@media screen and (max-width: 767px) {
+  div.App {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.content-section {
+    padding: 0;
+  }
+  div.tab-menu {
+    font-size: 15px;
+    margin: 0;
+    width: 80%;
+  }
+  button.tab-button {
+    margin: -60px -20px;
+  }
+  form.form-horizontal {
+    grid-template-columns: none;
+    gap: 0px;
+    padding: 0 20px 0 20px;
+  }
+  label.labelhomepage {
+    font-size: 10px;
+  }
+  input.inputText {
+    font-size: 10px;
+  }
+  select.inputText {
+    font-size: 10px;
+  }
+  div.form-group {
+    border: none;
+  }
+  div.form-btn {
+    align-items: center;
+    flex-direction: column;
+  }
+  button.btnBookRoom[type="submit"] {
+    width: fit-content;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .form-group:nth-child(4) {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .content-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left-text,
+  .right-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  h1.main-title {
+    font-size: 20px;
+  }
+  p.sub-title {
+    font-size: 25px;
+  }
+  div.left-text {
+    max-width: 70%;
+  }
+  div.right-text {
+    max-width: 70%;
+  }
+  div.right-text p {
+    font-size: 10px;
+  }
+  a.booking-link {
+    font-size: 13px;
+  }
+  div.top-text {
+    padding: 0;
+  }
+  h1.main {
+    font-size: 15px;
+  }
+  p.sub {
+    font-size: 20px;
+  }
+  div.discover {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  div.discoverLeft {
+    width: 80%;
+    height: fit-content;
+    margin: 20px;
+  }
+  div.discoverRight {
+    align-self: center;
+    width: 300px;
+  }
+  h1.mainL1 {
+    font-size: 20px;
+  }
+  p.contentL1 {
+    font-size: 15px;
+  }
+  div.chambienchambinhyen {
+    padding: 0 0 30px 0;
+  }
+  a.viewmore-link {
+    font-size: 15px;
+  }
+  div.taste {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10;
+  }
+
+
+  div.vid2 {
+    width: 100%;
+    height: 100%;
+  }
+  div.tasteRight {
+    width: 80%;
+    height: 100%;
+    align-self: center;
+  }
+  h1.mainR1 {
+    font-size: 20px;
+  }
+  p.contentR1 {
+    font-size: 15px;
+  }
+  h1.overlay-text {
+    font-size: 20px;
+    padding: 30px;
+    line-height: 3;
+  }
+  video.background-video {
+    height: 623px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  div.App {
+    width: 85%;
+    margin-left: 20px; /* Hoặc giá trị khác nếu bạn muốn */
+    margin-right: 20px; /* Hoặc giá trị khác nếu bạn muốn */
+  }
+  div.tab-content {
+    padding: 30px 0 0 0;
+    left: 20px;
+    width: 105%;
+  }
+  div.tab-menu {
+    width: 80%;
+    left: -8px;
+  }
+  button.tab-button {
+    font-size: 25px;
+  }
+  label.labelhomepage {
+    font-size: 15px;
+  }
+  div.form-group {
+    width: 100%;
+  }
+  button.btnBookRoom[type="submit"] {
+    font-size: 15px;
+    margin-right: 10px;
+    align-items: center;
+    width: fit-content;
+  }
+  div.content-section {
+    padding: 0px 50px 50px 50px;
+  }
+  h1.main-title {
+    font-size: 38px;
+  }
+  p.sub-title {
+    font-size: 40px;
+  }
+  div.right-text p {
+    font-size: 15px;
+  }
+  a.booking-link {
+    font-size: 15px;
+  }
+  div.chambienchambinhyen {
+    padding: 0 0 50px 0;
+  }
+  div.discover {
+    padding: 30px;
+  }
+  div.discoverLeft {
+    height: fit-content;
+  }
+  div.discoverRight {
+    width: 350px;
+  }
+  h1.mainL1 {
+    font-size: 30px;
+  }
+  p.contentL1 {
+    font-size: 20px;
+  }
+  a.viewmore-link {
+    font-size: 18px;
+  }
+  div.taste {
+    padding: 30px;
+  }
+  div.tasteLeft {
+    width: 50%;
+    align-self: center;
+  }
+  div.vid2 {
+    width: fit-content;
+    height: fit-content;
+  }
+  div.tasteRight {
+    width: 48%;
+    height: fit-content;
+  }
+  h1.mainR1 {
+    font-size: 30px;
+  }
+  p.contentR1 {
+    font-size: 20px;
+  }
+  h1.overlay-text {
+    padding: 100px;
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  div.App {
+    width: 88%;
+    margin-left: 40px; /* Hoặc giá trị khác nếu bạn muốn */
+    margin-right: 40px; /* Hoặc giá trị khác nếu bạn muốn */
+  }
+  div.tab-content {
+    padding: 50px 5px 0px 5px;
+    left: 10px;
+  }
+  div.tab-menu {
+    width: 70%;
+    left: 5%;
+  }
+
+
+  button.btnBookRoom[type="submit"] {
+    width: max-content;
+    gap: 10px;
+  }
+  form.form-group:nth-child(1) {
+    width: max-content;
+  }
+  ul.booking-date {
+    flex-direction: row;
+    text-align: justify;
+  }
+  form.form-group:nth-child(2) {
+    width: fit-content;
+  }
+  div.content-section {
+    padding: 50px 0 50px 0;
+    justify-content: normal;
+  }
+  h1.main-title {
+    font-size: 42px;
+  }
+  div.chambienchambinhyen {
+    padding: 0px 0 50px 0;
+  }
+  div.discover {
+    padding: 50px;
+  }
+  div.taste {
+    padding: 50px;
+  }
+  div.tasteLeft {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+  }
+  div.vid2 {
+    width: 100%;
+    height: fit-content;
+  }
+  div.tasteRight {
+    width: 50%;
+    height: fit-content;
+  }
+  h1.overlay-text {
+    padding: 50px;
+  }
+}
+.home {
+  display: flex;
+  flex-direction: column; /* Hiển thị nội dung theo chiều dọc */
+  justify-content: space-between; /* Căn chỉnh khoảng cách giữa các phần tử */
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  width: 100vw; /* Chiều rộng bằng chiều rộng của cửa sổ trình duyệt */
+  height: 100vh; /* Chiều cao bằng chiều cao của cửa sổ trình duyệt */
+  background-color: white;
+}
+
+
+.videobanner {
+  position: relative;
+  height: 623px;
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 50px;
+}
+.background-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 623px;
+}
+.App {
+  width: 70%;
+  margin-left: 230px;
+  margin-right: 230px;
+}
+/* Nội dung tab */
+.tab-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  top: -50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.tab-menu {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 40px;
+  left: 10%;
+  background-color: transparent;
+  width: 60%;
+  height: 100%;
+  font-size: 30px;
+  margin: 0px 0px 0px 80px;
+}
+
+
+.tab-button {
+  background-color: var(--grey);
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  cursor: pointer;
+  color: #818c98;
+  font-weight: bold;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Sử dụng transition 0.5 giây */
+  border-radius: 10px;
+  box-shadow: var(--blue);
+  margin: -70px -20px;
+  font-family: "Playfair Display";
+  position: relative;
+}
+
+
+.tab-button.active {
+  background-color: white;
+  color: var(--blue);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border: var(--blue);
+  border-bottom: 1.3px solid var(--blue);
+  z-index: 1;
+  position: relative;
+}
+
+
+.tab-panel {
+  background-color: transparent;
+  display: inline;
+  margin: 20%;
+  z-index: 2;
+  position: relative;
+}
+.form-horizontal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột đều nhau */
+  gap: 10px; /* Khoảng cách giữa các ô */
+}
+.form-group {
+  display: flex;
+  align-items: start;
+  padding: 0 0 0 20px;
+  gap: 10px; /* Khoảng cách giữa label và input */
+  flex-direction: column;
+  border-right: 1px solid var(--grey);
+}
+.form-groupPhone {
+  display: flex;
+  align-items: start;
+  padding: 0 0 0 20px;
+  gap: 10px; /* Khoảng cách giữa label và input */
+  flex-direction: column;
+  border-right: 1px solid var(--grey);
+}
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnBookRoom[type="submit"] {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--yellow);
+  color: var(--blue);
+  padding: 10px 10px;
+  width: 60%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.labelhomepage {
+  color: var(--blue);
+  font-family: "Raleway";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.locationHome {
+  display: flex;
+  align-items: center;
+}
+.booking-date {
+  display: flex;
+  align-items: center;
+}
+.inputText {
+  grid-row: 2;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: var(--blue);
+  font-size: 16px;
+  width: 100%;
+}
+.form-group:nth-child(2) {
+  width: 300px;
+}
+.numberHome {
+  display: flex;
+  align-items: center;
+}
+.form-group:nth-child(4) {
+  flex-direction: row;
+  align-self: center;
+}
+.form-group:nth-child(3) {
+  border: none;
+}
+/* Content section styling */
+.content-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  z-index: 1;
+}
+
+
+.left-text {
+  max-width: 50%;
+}
+
+
+.right-text {
+  max-width: 45%;
+  text-align: right;
+}
+
+
+.main-title {
+  font-family: "Playfair Display";
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--blue);
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+
+.sub-title {
+  font-family: "MonteCarlo", cursive;
+  font-weight: 400;
+  font-size: 50px;
+  color: var(--yellow);
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+.right-text p {
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #818c98;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+
+.booking-link {
+  position: relative;
+  font-family: "Raleway";
+  line-height: 2;
+  font-size: 20px;
+  color: var(--yellow); /* Gold color */
+}
+.booking-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--yellow);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.booking-link:hover:after {
+  transform: scaleX(0.3);
+}
+.chambienchambinhyen {
+  padding: 0px 0 50px 0;
+}
+
+
+.top-text {
+  padding: 0px 0 30px 0;
+}
+.main {
+  font-family: "Raleway";
+  font-size: 35px;
+  color: var(--yellow);
+  font-weight: 300;
+  text-align: center;
+}
+.sub {
+  font-family: "Playfair Display";
+  font-size: 40px;
+  color: var(--blue);
+  font-weight: 300;
+  text-align: center;
+}
+.discover {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.discoverLeft {
+  flex-direction: column;
+  border: 1px solid var(--yellow);
+  border-radius: 16px;
+  width: 45%;
+  height: fit-content;
+  padding: 15px;
+  text-align: right;
+  align-self: center;
+}
+.mainL1 {
+  font-family: "Playfair Display";
+  font-size: 40px;
+  color: var(--yellow);
+  text-align: center;
+}
+.contentL1 {
+  font-family: "Raleway";
+  font-size: 25px;
+  padding: 8px;
+  font-weight: 300;
+  color: var(--blue);
+  text-align: justify;
+  letter-spacing: 1px;
+  align-items: center;
+}
+.viewmore-link {
+  position: relative;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--yellow);
+  margin: 20px;
+}
+a.viewmore-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--yellow);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+a.viewmore-link:hover:after {
+  transform: scaleX(0.3);
+}
+.discoverRight {
+  width: 400px;
+  height: max-content;
+}
+.slides {
+  width: 100%;
+  height: 100%;
+}
+.taste {
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+}
+
+
+.tasteRight {
+  flex-direction: column;
+  border: 1px solid var(--yellow);
+  border-radius: 16px;
+  width: 40%;
+  height: fit-content;
+  padding: 20px;
+  text-align: right;
+  align-items: center;
+}
+.mainR1 {
+  font-family: "Playfair Display";
+  font-size: 40px;
+  color: var(--yellow);
+  text-align: center;
+}
+.contentR1 {
+  font-family: "Raleway";
+  font-size: 25px;
+  padding: 8px;
+  font-weight: 300;
+  color: var(--blue);
+  text-align: justify;
+  letter-spacing: 1px;
+}
+.vid2 {
+  height: 300px;
+  width: 614px;
+  left: 5px;
+}
+.overlayVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000030; /* Màu nền trắng nhạt với độ trong suốt */
+  display: flex;
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  text-align: center; /* Canh giữa chữ */
+}
+
+
+.overlay-text {
+  padding: 380px;
+  color: white; /* Màu chữ */
+  font-size: 40px; /* Kích thước chữ */
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
+
+
+
+
+

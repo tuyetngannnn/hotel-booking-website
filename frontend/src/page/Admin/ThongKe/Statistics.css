@@ -1,0 +1,256 @@
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+}
+
+/* Top bar */
+.top-bar-admin {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.room-manager-content {
+    flex-grow: 1;
+    padding: 20px;
+    border: solid 1.5px #EFD099;
+    border-radius: 20px;
+    margin-left: 272px;
+    overflow-y: auto;
+    height: calc(100vh - 40px);
+}
+
+.room-manager-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #004168;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+
+.horizontal-form-tk {
+    display: flex;
+    margin: 40px 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-group-tk {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-label-tk {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Raleway';
+    color: #004168;
+}
+
+.form-select-tk {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid #004168;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Raleway';
+    color: #004168;
+}
+
+.button-tk {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid #004168;
+    background-color: transparent;
+    cursor: pointer;
+    color: #004168;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-tk:hover {
+    background-color: #004168;
+    color: white;
+}
+
+.statistic-container-tk {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistic-tabs-tk {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-tk {
+    padding: 10px 20px;
+    border: 1px solid #EFD099;
+    background-color: transparent;
+    cursor: pointer;
+    color: #EFD099;
+    font-weight: bold;
+}
+
+.tab.active-tk {
+    background-color: #EFD099;
+    color: #fff;
+}
+
+.statistic-content-tk {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistic-section-tk {
+    display: flex;
+    width: 100%;
+}
+
+/* Layout for chart and table side by side */
+.chart-section-tk {
+    flex: 1;
+    background-color: #EFD099;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.table-section-tk {
+    flex: 1;
+    background-color: #D3D3D3;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    overflow-y: auto;
+}
+
+.table-section-tk table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-section-tk th,
+.table-section-tk td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #fff;
+}
+
+.table-section-tk caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Tab navigation styles */
+.tab-nav-tk {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-button-tk {
+    border: solid 2px #EFD099;
+    padding: 15px;
+    width: 200px;
+    color: #efd099;
+    font-size: 18px;
+    font-family: 'Raleway';
+}
+
+.tab-button-tk:hover {
+    background-color: #FEF8E8;
+    color: #004168;
+}
+
+.tab-button-tk.active {
+    background-color: #162f4a;
+    color: #EFD099;
+    font-weight: bold;
+    border: none;
+}
+
+.content-container-tk {
+    justify-content: space-between;
+    display: flex;
+    gap: 40px;
+    height: 400px;
+}
+
+/* Layout adjustments for chart and table container */
+.table-chart {
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.chart-container {
+    display: flex;
+    gap: 20px;
+    /* Khoảng cách giữa các cột */
+    width: 50%;
+}
+
+.table-container {
+    display: flex;
+    gap: 20px;
+    /* Khoảng cách giữa các cột */
+    width: 50%;
+}
+
+.chart-column,
+.table-column {
+    width: 48%;
+    /* Mỗi cột chiếm 48% chiều rộng */
+}
+
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-caption {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Raleway';
+    color: #004168;
+}
+
+.table-header {
+    background-color: #efd099;
+}
+
+.table-header-cell {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #004168;
+    color: #162f4a;
+}
+
+.table-row {
+    border-bottom: 1px solid #162f4a;
+}
+
+.table-cell {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #162f4a;
+}
+
+.h2-content {
+    font-size: 30px;
+    font-weight: bold;
+    color: #004168;
+    margin: 30px 0;
+    font-family: 'Playfair Display';
+    text-align: center;
+}

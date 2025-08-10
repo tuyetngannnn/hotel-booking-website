@@ -1,0 +1,95 @@
+.navbar-history {
+    margin: 24px;
+    border-radius: 8px;
+    border: solid 2px #EFD099;
+    padding: 16px;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Icon menu */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #004168;
+    margin-bottom: 10px;
+    display: none; /* Ẩn icon mặc định */
+}
+
+/* Danh sách liên kết hiển thị khi không responsive */
+.navbar-history ul {
+    display: flex; /* Hiển thị danh sách khi không ở chế độ responsive */
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Các mục trong danh sách */
+.navbar-history li {
+    text-align: start;
+    width: 100%;
+}
+
+/* Liên kết */
+.navbar-history a {
+    text-decoration: none;
+    color: #004168;
+    font-size: 18px;
+    font-family: 'Raleway';
+    width: 100%;
+    padding: 8px 0;
+    display: block;
+}
+
+.navbar-history a.active {
+    color: #004168;
+    font-weight: bold;
+}
+
+.navbar-history a:hover {
+    color: #EFD099;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Hiện icon khi màn hình nhỏ */
+    }
+
+    .navbar-history ul {
+        display: none; /* Ẩn danh sách liên kết khi màn hình nhỏ */
+    }
+
+    /* Hiển thị danh sách khi menu được mở */
+    .navbar-history ul.open {
+        display: flex; /* Hiển thị danh sách khi mở */
+    }
+
+    .navbar-history {
+        margin: 16px;
+        border: none;
+    }
+
+    .navbar-history a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-history {
+        margin: 12px;
+        padding: 8px;
+        border: none;
+    }
+
+    .navbar-history a {
+        font-size: 14px;
+    }
+}

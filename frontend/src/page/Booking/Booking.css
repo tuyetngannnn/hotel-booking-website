@@ -1,0 +1,622 @@
+@import "../../App.css";
+
+.booking-h1 {
+  font-family: "PlayFair Display";
+  font-size: 30px;
+  padding: 50px;
+  text-align: center;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.booking-steps-container {
+  background-color: #fef8e8;
+}
+
+.book-steps {
+  width: 57%;
+  height: fit-content;
+  justify-self: center;
+}
+
+.booking-steps-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  height: fit-content;
+  justify-self: center;
+  margin-bottom: 50px;
+}
+
+.booking-container {
+  width: 100%;
+  margin: 30px 0 30px 0;
+  justify-self: center;
+
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+}
+
+.booking-section {
+  padding: 0 30px 0 30px;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-number {
+  font-family: "Raleway";
+  margin: 10px 0 10px;
+}
+
+.label-date {
+  margin: 10px 13px 0px;
+}
+
+.input-booking,
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  margin: 15px;
+  width: 95%;
+}
+
+.input-number {
+  padding: 10px;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  margin-left: 10px;
+  width: 10%;
+}
+
+.btn-booking-back {
+  padding: 10px;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-booking-back:hover {
+  border: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+}
+
+.booking-content p {
+  margin: 10px 0;
+  font-family: "Raleway";
+  font-size: 16px;
+}
+
+.booking-content strong {
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-right: 5px;
+  color: var(--blue);
+}
+
+.form-booking {
+  font-family: "Raleway";
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.btn-booking-next {
+  padding: 10px;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+.btn-booking-next:hover {
+  border: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+}
+
+.btn-booking-confirm {
+  padding: 10px;
+  background-color: var(--yellow);
+  color: var(--blue);
+  border-radius: 5px;
+  margin: 5px 0;
+  font-family: "Raleway";
+  font-weight: bold;
+  border: 2px solid transparent;
+  /* Prevents size change */
+  box-sizing: border-box;
+  /* Ensures padding and border are included in total width and height */
+
+}
+
+.btn-booking-confirm:hover {
+  border: none;
+  background-color: transparent;
+  border: 2px solid var(--yellow);
+  color: var(--yellow);
+}
+
+.services-booking {
+  max-height: 300px;
+  /* Chiều cao tối đa của danh sách */
+  overflow-y: auto;
+  /* Tạo thanh cuộn dọc khi danh sách quá dài */
+  padding-right: 10px;
+  /* Khoảng cách bên phải để tránh che khuất nội dung */
+}
+
+/* Tùy chỉnh thanh cuộn */
+.services-booking::-webkit-scrollbar {
+  width: 8px;
+  /* Độ rộng của thanh cuộn */
+}
+
+.services-booking::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Màu nền của đường đi thanh cuộn */
+  border-radius: 4px;
+  /* Bo góc cho đường đi */
+}
+
+.services-booking::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  /* Màu của thanh cuộn */
+  border-radius: 4px;
+  /* Bo góc cho thanh cuộn */
+  border: 2px solid #f1f1f1;
+  /* Khoảng cách giữa thanh cuộn và đường đi */
+}
+
+.services-booking::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8;
+  /* Màu của thanh cuộn khi hover */
+}
+
+.services-booking label {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  color: var(--blue);
+}
+
+.services-booking ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: 0.3s, transform 0.3s;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-booking ul:hover {
+  background-color: #f0f0f0;
+  /* Màu nền khi hover */
+  transform: scale(1.02);
+  /* Phóng to một chút khi hover */
+}
+
+.services-booking ul.selected {
+  background-color: var(--yellow);
+  /* Màu nền khi tick */
+  border: none;
+}
+
+.services-booking input[type="checkbox"] {
+  transform: scale(1.5);
+  /* Thay đổi kích thước checkbox */
+  margin-right: 10px;
+  /* Khoảng cách giữa checkbox và label */
+  cursor: pointer;
+  /* Thay đổi con trỏ khi hover */
+  accent-color: var(--blue);
+}
+
+.services-booking span {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: var(--blue);
+}
+
+.services-booking .service-item,
+.services-booking .equipment-item {
+  display: flex;
+  /* Sử dụng flexbox để căn chỉnh tên và giá */
+  justify-content: space-between;
+  /* Căn giữa giữa tên và giá */
+  padding: 10px;
+  /* Khoảng cách bên trong cho mỗi mục */
+  border-bottom: 1px solid #ccc;
+  /* Viền dưới cho mỗi mục */
+  transition: background-color 0.3s;
+  /* Hiệu ứng chuyển tiếp cho màu nền */
+}
+
+.services-booking .service-item:last-child,
+.services-booking .equipment-item:last-child {
+  border-bottom: none;
+  /* Loại bỏ viền dưới cho mục cuối cùng */
+}
+
+.service-name,
+.equipment-name {
+  flex: 1;
+  /* Chiếm không gian còn lại cho tên */
+  font-size: 16px;
+  /* Kích thước chữ */
+  font-family: "Raleway";
+  /* Font chữ */
+  color: var(--blue);
+  /* Màu chữ cho tên */
+}
+
+.service-price,
+.equipment-price {
+  white-space: nowrap;
+  /* Ngăn ngừa ngắt dòng trong giá */
+  margin-left: 10px;
+  /* Khoảng cách giữa tên và giá */
+  font-size: 16px;
+  /* Kích thước chữ cho giá */
+  font-family: "Raleway";
+  /* Font chữ */
+  color: var(--blue);
+  /* Màu chữ cho giá */
+  font-weight: bold;
+  /* In đậm giá */
+}
+
+.btn-section {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  gap: 76.5%;
+}
+
+.booking-step3 p {
+  color: var(--yellow);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.booking-step3 strong {
+  color: var(--blue);
+  font-size: 20px;
+  font-family: "Raleway";
+  margin-left: 15px;
+  padding: 10px 0 0 0;
+}
+
+/* progress-bar.css */
+.progress-bar {
+  width: 80%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  /* Căn giữa các bước */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  position: relative;
+  margin: 20px 0;
+}
+
+.step {
+  width: 300px;
+  justify-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.step h3 {
+  display: block;
+  margin-top: 5px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #bcbcbc;
+  color: #bcbcbc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  position: relative;
+  /* Để có thể định vị thanh nối */
+  z-index: 1;
+  /* Để vòng tròn nằm trên thanh nối */
+}
+
+.circle.active {
+  background-color: var(--blue);
+  /* Màu xanh cho bước hiện tại */
+  color: white;
+  /* Màu chữ trắng */
+  border: none;
+}
+
+.progress-line {
+  width: 70%;
+  flex-grow: 1;
+  /* Chiều dài của thanh giữa các vòng tròn */
+  height: 2px;
+  /* Độ dày của thanh */
+  background-color: var(--grey);
+  /* Màu xám cho thanh không hoạt động */
+  position: relative;
+  z-index: 0;
+  /* Đặt thanh phía dưới các vòng tròn */
+  margin-top: -20px;
+  right: 4px;
+}
+
+.progress-line.completed {
+  background-color: var(--blue);
+}
+
+.step:not(:last-child) .progress-line {
+  width: calc(100% - 30px);
+  /* Đặt chiều rộng thanh */
+  margin: 0 15px;
+  /* Khoảng cách giữa các bước */
+}
+
+.btn-huy-detail-user {
+  border: solid 2px #ff1414;
+  background-color: transparent;
+  color: #ff1414;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
+}
+
+.btn-huy-detail-user:hover {
+  background-color: #ff1414;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .booking-h1 {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .booking-steps-content {
+    padding: 10px;
+  }
+
+  .progress-bar {
+    width: 90%;
+  }
+
+  .progress-line {
+    width: 100px;
+    margin-top: -30px;
+    right: auto;
+  }
+
+  .step {
+    width: fit-content;
+  }
+
+  .book-steps {
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .booking-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .booking-section {
+    padding: 10px;
+  }
+
+  .booking-content p {
+    font-size: 13px;
+  }
+
+  .label-number {
+    font-size: 13px;
+  }
+
+  .services-booking {
+    max-height: none;
+    padding: 15px;
+  }
+
+  .services-booking label {
+    font-size: 13px;
+  }
+
+  .services-booking span {
+    font-size: 13px;
+  }
+
+  .btn-section {
+    gap: 56.5%;
+  }
+
+  .btn-booking-back {
+    font-size: 13px;
+  }
+
+  .btn-booking-next {
+    font-size: 13px;
+  }
+
+  .booking-step3 {
+    padding: 10px;
+  }
+
+  .label-date {
+    font-size: 13px;
+    margin: 10px;
+  }
+
+  .input-booking,
+  input[type="date"] {
+    width: 95%;
+    margin: 8px;
+    padding: 8px;
+  }
+
+  .booking-step3 p {
+    font-size: 15px;
+  }
+
+  .booking-step3 strong {
+    font-size: 15px;
+  }
+
+  .btn-booking-confirm {
+    font-size: 13px;
+  }
+
+  .btn-huy-detail-user {
+    width: 100%; /* Đặt chiều rộng của nút là 100% trên các thiết bị nhỏ */
+    font-size: 14px; /* Giảm kích thước font cho nút */
+    padding: 12px; /* Điều chỉnh padding để nút không quá nhỏ */
+  }
+}
+
+/* Responsive cho max-width: 1024px */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .booking-h1 {
+    font-size: 26px;
+    padding: 40px;
+  }
+
+  .book-steps {
+    width: 90%;
+  }
+
+  .booking-section {
+    padding: 0;
+    gap: 0;
+  }
+
+  .booking-steps-content {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .input-booking,
+  input[type="date"] {
+    width: 97%;
+    margin: 10px;
+  }
+
+  .input-number {
+    width: 50px;
+  }
+
+  .progress-bar {
+    width: 90%;
+  }
+
+  .step {
+    width: 40%;
+  }
+
+  .progress-line {
+    right: 0;
+  }
+
+  .btn-huy-detail-user {
+    width: 150px; /* Điều chỉnh chiều rộng cho các màn hình trung bình */
+    font-size: 15px; /* Tăng kích thước font cho nút */
+    padding: 10px; /* Padding hợp lý cho các màn hình này */
+  }
+}
+
+/* Responsive cho max-width: 820px */
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .booking-h1 {
+    font-size: 22px;
+    padding: 30px;
+  }
+
+  .book-steps {
+    width: 90%;
+  }
+
+  .booking-steps-content {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .input-booking,
+  input[type="date"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .btn-section {
+    gap: 71%;
+  }
+
+  .progress-bar {
+    width: 91%;
+  }
+
+  .step {
+    width: 40%;
+  }
+
+  .progress-line {
+    width: 75%;
+  }
+
+  .services-booking label {
+    font-size: 18px;
+  }
+
+  .btn-booking-next {
+    font-size: 16px;
+  }
+
+  .btn-booking-confirm {
+    font-size: 16px;
+  }
+
+  .btn-huy-detail-user {
+    width: 180px; /* Điều chỉnh chiều rộng nút cho các màn hình có độ rộng từ 768px đến 820px */
+    font-size: 15px; /* Kích thước font cho nút */
+    padding: 10px; /* Padding hợp lý cho các màn hình này */
+  }
+}

@@ -1,0 +1,1190 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+.App {
+  background-color: white;
+  font-family: "PlayfairDisplay";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "PlayfairDisplay";
+}
+
+:root {
+  --blue: #162f4a;
+  --bluehalf: #162f4a;
+  --yellow: #efd099;
+  --grey: #d9d9d9;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.li {
+  list-style: none;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px;
+  background: var(--yellow);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--secondaryColor);
+}
+
+.navBarSection {
+  background: var(--blue);
+  width: 100%;
+}
+
+input {
+  font-size: 100%;
+}
+
+body {
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/*----------------------------------Đăng nhập----------------------------------*/
+
+.container {
+  display: flex;
+  /* Sử dụng flex để tạo layout */
+  background-color: white;
+  /* Màu nền cho form */
+  border-radius: 8px;
+  /* Bo góc */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* Đổ bóng nhẹ cho form */
+  overflow: hidden;
+  /* Ẩn phần vượt ra ngoài biên */
+  max-width: 800px;
+  /* Độ rộng tối đa cho container */
+  width: 100%;
+  /* Độ rộng 100% */
+}
+
+.image-container {
+  background-image: url("./assets/images/login.jpg");
+  /* Đường dẫn tới hình ảnh */
+  background-size: cover;
+  /* Làm đầy container với hình ảnh */
+  background-position: center;
+  /* Căn giữa hình ảnh */
+  height: 666px;
+  /* Đảm bảo chiều cao của container */
+  width: 655px;
+  margin-right: 60px;
+  border-radius: 20px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.login-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Đảm bảo ảnh không bị biến dạng */
+}
+
+.form-container {
+  flex: 0 0 500px;
+  /* Độ rộng cố định cho form */
+  padding: 40px;
+  /* Padding cho form */
+}
+
+.login-form {
+  /* padding-left: 20px; */
+  /* width: 520px; */
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.login-form p {
+  font-size: 18px;
+  font-family: raleway;
+  color: #004168;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.login-form h1 {
+  text-align: center;
+  /* Căn giữa tiêu đề */
+  font-size: 36px;
+  /* Kích thước chữ tiêu đề */
+  margin-bottom: 20px;
+  /* Khoảng cách dưới tiêu đề */
+  font-family: playfair display;
+  color: #004168;
+  font-weight: 500;
+}
+
+.input-box,
+.password-box {
+  width: 500px;
+  height: 60px;
+  font-size: 20px;
+  padding-left: 16px;
+  border: 3px solid #004168;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+/* Áp dụng màu biên khi focus */
+.input-box:focus {
+  border-color: #007bff;
+  /* Màu biên khi focus */
+}
+
+.password-container {
+  width: 500px;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #004168;
+  padding-left: 16px;
+  padding-right: 5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  /* Thêm thuộc tính này */
+}
+
+/* Sử dụng pseudo-class :focus-within để áp dụng hiệu ứng khi ô input bên trong có focus */
+.password-container:focus-within {
+  border-color: #007bff;
+}
+
+.password-input {
+  width: 100%;
+  font-size: 20px;
+  background-color: transparent;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+}
+
+.password-icon {
+  color: #888888;
+  width: 35px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding-right: 16px;
+}
+
+.password-icon:hover {
+  color: #162F4A;
+}
+
+.btn-primary {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  font-family: playfair display;
+  font-weight: 700;
+  background-color: #004168;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #EFD099;
+  color: #162F4A;
+}
+
+
+
+.error-message {
+  color: #ff0000 !important;
+  /* Màu chữ cho thông báo lỗi */
+  font-size: 12px;
+  /* Kích thước chữ cho thông báo lỗi */
+  margin-bottom: 20px !important;
+  /* Khoảng cách dưới thông báo lỗi */
+  margin-top: 20px !important;
+  /* Khoảng cách dưới thông báo lỗi */
+  text-align: start;
+  /* Căn giữa thông báo lỗi */
+}
+
+.login-form .forgot-password {
+  text-align: end;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: raleway;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+.link-create {
+  padding-left: 8px;
+  font-weight: 800;
+  color: #004168;
+  /* Màu cho link */
+  text-decoration: underline;
+  /* Bỏ gạch chân cho link */
+  font-family: Raleway;
+}
+
+.link {
+  color: #004168;
+  /* Màu cho link */
+  text-decoration: none;
+  /* Bỏ gạch chân cho link */
+  font-family: Raleway;
+}
+
+.link:hover {
+  color: #0056b3;
+  /* Màu khi hover trên link */
+}
+
+.footer-login {
+  text-align: center;
+}
+
+.login-role-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.login-role-text {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: raleway;
+  color: #004168;
+  margin: 0 65px;
+  /* Khoảng cách giữa text và đường gạch */
+}
+
+.line {
+  flex: 2;
+  height: 2px;
+  background-color: #162f4a;
+}
+
+.btn-role {
+  width: 500px;
+  /* Đặt độ rộng */
+  height: 50px;
+  /* Đặt chiều cao */
+  font-size: 20px;
+  font-family: raleway;
+  font-weight: 700;
+  background-color: transparent;
+  /* Màu nền cho nút */
+  color: #EFD099;
+  /* Màu chữ cho nút */
+  outline: none;
+  /* Không hiển thị đường viền khi focus */
+  transition: border-color 0.3s;
+  /* Hiệu ứng chuyển động khi focus */
+  border: 3px solid #EFD099;
+  /* Biên cho input */
+  border-radius: 10px;
+  /* Bo góc cho nút */
+  cursor: pointer;
+  /* Con trỏ khi hover */
+  transition: background-color 0.3s;
+  /* Hiệu ứng chuyển động khi hover */
+}
+
+.btn-role:hover {
+  background-color: #EFD099;
+  /* Màu nền khi hover */
+  color: #ffffff
+}
+
+/* Ẩn logo trong chế độ bình thường */
+.logo-container {
+  display: none;
+  /* Ẩn logo mặc định */
+}
+
+.backHome {
+  font-family: Raleway;
+  color: #162f4a;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: start;
+  margin: 20px 0;
+}
+
+.backHome:hover {
+  color: #EFD099;
+}
+
+/*----------------------------------Đăng ký----------------------------------*/
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.signup-form {
+  padding-left: 20px;
+  width: 500px;
+}
+
+.signup-form h1 {
+  text-align: center;
+  /* Căn giữa tiêu đề */
+  font-size: 36px;
+  /* Kích thước chữ tiêu đề */
+  margin-bottom: 0px;
+  /* Khoảng cách dưới tiêu đề */
+  font-family: playfair display;
+  color: #004168;
+  font-weight: 500;
+}
+
+.image-container-signup {
+  background-image: url("./assets/images/signup.jpg");
+  /* Đường dẫn tới hình ảnh */
+  background-size: cover;
+  /* Làm đầy container với hình ảnh */
+  background-position: center;
+  /* Căn giữa hình ảnh */
+  height: 666px;
+  /* Đảm bảo chiều cao của container */
+  width: 655px;
+  margin-left: 80px;
+  border-radius: 20px;
+}
+
+.signup-form p {
+  font-size: 18px;
+  font-family: raleway;
+  color: #004168;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.btn-primary-signup {
+  width: 500px;
+  /* Đặt độ rộng */
+  height: 50px;
+  /* Đặt chiều cao */
+  font-size: 20px;
+  font-family: playfair display;
+  font-weight: 700;
+  margin-top: 20px;
+  background-color: #004168;
+  /* Màu nền cho nút */
+  color: white;
+  /* Màu chữ cho nút */
+  border: none;
+  /* Không có biên */
+  border-radius: 10px;
+  /* Bo góc cho nút */
+  cursor: pointer;
+  /* Con trỏ khi hover */
+  transition: background-color 0.3s;
+  /* Hiệu ứng chuyển động khi hover */
+}
+
+.btn-primary-signup:hover {
+  background-color: #EFD099;
+  color: #162F4A;
+}
+
+/* Responsive */
+
+/* Điều chỉnh cho màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* Đổi hướng từ row sang column */
+    max-width: 100%;
+    /* Đặt max-width cho container */
+  }
+
+  .image-container,
+  .image-container-signup {
+    display: none;
+    /* Ẩn ảnh trong màn hình nhỏ */
+  }
+
+  .form-container,
+  .login-form,
+  .signup-form {
+    padding: 20px;
+    /* Giảm padding cho form */
+    width: 100%;
+    /* Chiếm toàn bộ chiều rộng */
+  }
+
+  .btn-primary,
+  .btn-primary-signup,
+  .btn-role {
+    width: 100%;
+    /* Đặt độ rộng nút theo kích thước của container */
+  }
+
+  .password-container,
+  .input-box {
+    width: 100%;
+    /* Đặt độ rộng input theo kích thước của container */
+  }
+
+  h1 {
+    font-size: 28px;
+    /* Giảm kích thước tiêu đề */
+  }
+
+  .forgot-password,
+  .forgot-password-admin,
+  .create-account,
+  .footer-login {
+    font-size: 12px;
+    /* Giảm kích thước chữ cho các đoạn văn */
+  }
+
+  .login-role-text {
+    margin: 0 30px;
+    /* Giảm khoảng cách giữa text và đường gạch */
+    font-size: 14px;
+  }
+
+  .line {
+    height: 1px;
+    /* Giảm chiều cao của đường gạch */
+  }
+
+  /* Hiển thị logo khi ở chế độ responsive */
+  .logo-container {
+    display: block;
+    /* Hiển thị logo */
+  }
+
+  .backHome {
+    font-size: 16px;
+  }
+}
+
+/* Điều chỉnh cho màn hình nhỏ hơn 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 0;
+    /* Xóa padding container */
+  }
+
+  h1 {
+    font-size: 24px;
+    /* Giảm tiếp kích thước tiêu đề */
+  }
+
+  .forgot-password,
+  .forgot-password-admin,
+  .create-account,
+  .footer-login {
+    font-size: 15px;
+    /* Giảm tiếp kích thước chữ cho các đoạn văn */
+  }
+
+  .btn-primary,
+  .btn-primary-signup,
+  .btn-role {
+    height: 45px;
+    /* Điều chỉnh chiều cao của các nút */
+    font-size: 18px;
+  }
+
+  .input-box,
+  .password-container {
+    height: 50px;
+    /* Điều chỉnh chiều cao của input */
+    font-size: 18px;
+  }
+}
+
+
+
+/* ------------------------------ADMIN------------------------------ */
+
+.login-container-admin {
+  display: flex;
+  /* Sử dụng flex để tạo layout */
+  background-color: #162F4A;
+  /* Màu nền cho form */
+  border-radius: 8px;
+  /* Bo góc */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* Đổ bóng nhẹ cho form */
+  overflow: hidden;
+  /* Ẩn phần vượt ra ngoài biên */
+  max-width: 800px;
+  /* Độ rộng tối đa cho container */
+  width: 100%;
+  /* Độ rộng 100% */
+}
+
+.image-container-admin {
+  background-image: url("./assets/images/loginadmin.jpg");
+  /* Đường dẫn tới hình ảnh */
+  background-size: cover;
+  /* Làm đầy container với hình ảnh */
+  background-position: center;
+  /* Căn giữa hình ảnh */
+  height: 666px;
+  /* Đảm bảo chiều cao của container */
+  width: 655px;
+  margin-right: 60px;
+  border-radius: 20px;
+}
+
+.login-container-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.login-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Đảm bảo ảnh không bị biến dạng */
+}
+
+.form-container-admin {
+  flex: 0 0 500px;
+  /* Độ rộng cố định cho form */
+  padding: 40px;
+  /* Padding cho form */
+}
+
+.login-form-admin {
+  /* padding-left: 20px; */
+  /* width: 520px; */
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.backHome-admin {
+  font-family: Raleway;
+  color: #EFD099;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: start;
+  margin: 20px 0;
+}
+
+.backHome-admin:hover {
+  color: white;
+}
+
+.login-form-admin p {
+  font-size: 18px;
+  font-family: raleway;
+  color: #EFD099;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.login-form-admin h1 {
+  text-align: center;
+  /* Căn giữa tiêu đề */
+  font-size: 36px;
+  /* Kích thước chữ tiêu đề */
+  margin-bottom: 20px;
+  /* Khoảng cách dưới tiêu đề */
+  font-family: playfair display;
+  color: #EFD099;
+}
+
+.input-box-admin,
+.password-box-admin {
+  /* Thêm class password-box */
+  width: 500px;
+  /* Đặt độ rộng */
+  height: 60px;
+  /* Đặt chiều cao */
+  font-size: 20px;
+  /* Kích thước chữ */
+  padding-left: 16px;
+  /* Padding cho input */
+  border: 3px solid #EFD099;
+  /* Biên cho input */
+  background-color: transparent;
+  color: #EFD099;
+  border-radius: 10px;
+  /* Bo góc cho input */
+  outline: none;
+  /* Không hiển thị đường viền khi focus */
+  transition: border-color 0.3s;
+  /* Hiệu ứng chuyển động khi focus */
+  box-sizing: border-box;
+  /* Thêm thuộc tính này */
+  
+}
+
+/* Sử dụng pseudo-class :focus-within để áp dụng hiệu ứng khi ô input bên trong có focus */
+.password-container:focus-within {
+  border-color: #007bff;
+}
+
+.btn-primary-admin {
+  width: 500px;
+  /* Đặt độ rộng */
+  height: 50px;
+  /* Đặt chiều cao */
+  font-size: 20px;
+  font-family: playfair display;
+  font-weight: 700;
+  background-color: #EFD099;
+  /* Màu nền cho nút */
+  color: #162F4A;
+  /* Màu chữ cho nút */
+  border: none;
+  /* Không có biên */
+  border-radius: 10px;
+  /* Bo góc cho nút */
+  cursor: pointer;
+  /* Con trỏ khi hover */
+  transition: background-color 0.3s;
+  /* Hiệu ứng chuyển động khi hover */
+}
+
+.btn-primary-admin:hover {
+  border: solid 2px #EFD099;
+  color: white;
+}
+
+.login-form-admin .forgot-password-admin {
+  text-align: end;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: raleway;
+}
+
+.link-admin {
+  color: #EFD099;
+  /* Màu cho link */
+  text-decoration: none;
+  /* Bỏ gạch chân cho link */
+  font-family: Raleway;
+}
+
+.link-admin:hover {
+  color: #0056b3;
+  /* Màu khi hover trên link */
+}
+
+.login-role-text-admin {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: raleway;
+  color: #EFD099;
+  margin: 0 65px;
+  /* Khoảng cách giữa text và đường gạch */
+}
+
+.line-admin {
+  flex: 2;
+  height: 2px;
+  background-color: #EFD099;
+}
+
+.password-container-admin {
+  width: 500px;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #EFD099;
+  padding-left: 16px;
+  padding-right: 5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  /* Thêm thuộc tính này */
+}
+
+/* Sử dụng pseudo-class :focus-within để áp dụng hiệu ứng khi ô input bên trong có focus */
+.password-container-admin:focus-within {
+  border-color: #007bff;
+}
+
+.password-input-admin {
+  width: 100%;
+  font-size: 20px;
+  background-color: transparent;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  color: #EFD099;
+}
+
+.password-icon-admin {
+  color: #888888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding-right: 16px;
+  width: 35px;
+}
+
+.password-icon-admin:hover {
+  color: #EFD099;
+}
+
+/* Media query cho các màn hình nhỏ hơn */
+@media screen and (max-width: 768px) {
+  .login-container-admin {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .image-container-admin {
+    display: none;
+  }
+
+  .form-container-admin {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-form-admin {
+    width: 100%;
+  }
+
+  .input-box-admin,
+  .password-box-admin,
+  .password-container-admin,
+  .btn-primary-admin {
+    width: 100%;
+  }
+
+  .btn-primary-admin {
+    font-size: 18px;
+  }
+
+  .login-form-admin h1 {
+    font-size: 28px;
+  }
+
+  .login-form-admin p {
+    font-size: 18px;
+  }
+
+  .login-role-text-admin {
+    font-size: 18px;
+    margin: 0 20px;
+  }
+
+  .line-admin {
+    flex: 1;
+    height: 2px;
+  }
+
+  .backHome-admin {
+    font-size: 16px;
+  }
+}
+
+/* Media query cho các màn hình rất nhỏ (ví dụ: điện thoại) */
+@media screen and (max-width: 480px) {
+  .login-container-admin {
+    padding: 0px;
+  }
+
+  .login-form-admin h1 {
+    font-size: 24px;
+    /* Giảm tiếp kích thước tiêu đề */
+  }
+
+  .image-container-admin {
+    display: none;
+  }
+
+  .form-container-admin {
+    padding: 15px;
+  }
+
+  .login-form-admin {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .input-box-admin,
+  .password-box-admin,
+  .password-container-admin,
+  .btn-primary-admin {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .login-form-admin h1 {
+    font-size: 24px;
+  }
+
+  .login-form-admin p {
+    font-size: 18px;
+  }
+
+  .login-role-text-admin {
+    font-size: 14px;
+    margin: 0 30px;
+  }
+}
+
+/* Media query cho màn hình nhỏ hơn 1024px */
+@media screen and (max-width: 1024px) {
+  .login-container-admin {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container-admin {
+    display: none;
+  }
+
+  .form-container-admin {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .login-form-admin {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .input-box-admin,
+  .password-box-admin,
+  .password-container-admin,
+  .btn-primary-admin {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .btn-primary-admin {
+    font-size: 18px;
+  }
+
+  .login-form-admin h1 {
+    font-size: 28px;
+  }
+
+  .login-form-admin p {
+    font-size: 18px;
+  }
+
+  .login-role-text-admin {
+    font-size: 18px;
+    margin: 0 30px;
+  }
+
+  .line-admin {
+    flex: 1;
+    height: 2px;
+  }
+
+  .backHome-admin {
+    font-size: 16px;
+  }
+}
+
+
+
+/* --------------------------------------Quên Mật Khẩu-------------------------------------- */
+
+.forgot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.forgot-form {
+  width: 500px;
+}
+
+.forgot-form h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 0px;
+  font-family: playfair display;
+  margin: 25px 0;
+  color: #004168;
+  font-weight: 500;
+}
+
+.image-container-forgot {
+  background-image: url("./assets/images/forgot_password.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 666px;
+  width: 655px;
+  margin-right: 80px;
+  border-radius: 20px;
+}
+
+.forgot-form p {
+  font-size: 18px;
+  font-family: raleway;
+  color: #162F4A;
+  font-weight: 600;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.input-icon-container {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #162F4A;
+  /* Màu sắc của icon */
+}
+
+.input-box-with-icon {
+  width: 500px;
+  height: 60px;
+  font-size: 20px;
+  border: 3px solid #004168;
+  border-radius: 10px;
+  margin: 25px 0;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  padding-left: 60px;
+  /* Khoảng cách để đủ chỗ cho icon */
+}
+
+.input-box-with-icon:focus {
+  border-color: #007bff;
+  /* Màu biên khi focus */
+}
+
+.input-box-with-icon::placeholder {
+  color: #162f4a;
+  /* Đổi màu chữ placeholder */
+  opacity: 0.7;
+  /* Điều chỉnh độ mờ của placeholder, 1 là không mờ */
+}
+
+.btn-primary-forgot {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  font-family: playfair display;
+  font-weight: 700;
+  background-color: #004168;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 25px 0;
+}
+
+.btn-primary-forgot:hover {
+  background-color: #EFD099;
+  color: #162F4A;
+}
+
+.text-center h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 0px;
+  font-family: playfair display;
+  margin: 35px 0;
+  color: #004168;
+  font-weight: 500;
+}
+
+.text-center p {
+  font-size: 18px;
+  font-family: raleway;
+  color: #162F4A;
+  font-weight: 600;
+  margin: 35px 0;
+  text-align: center;
+}
+
+/* Media query cho các màn hình nhỏ hơn */
+@media screen and (max-width: 768px) {
+  .forgot-container {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Đảm bảo chiều cao chiếm đủ màn hình */
+  }
+
+  .image-container-forgot {
+    display: none;
+  }
+
+  .forgot-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .forgot-form {
+    width: 100%;
+  }
+
+  .input-box-forgot,
+  .btn-primary-forgot {
+    width: 100%;
+  }
+
+  .btn-primary-forgot {
+    font-size: 18px;
+  }
+
+  .forgot-form h1 {
+    font-size: 28px;
+  }
+
+  .forgot-form p {
+    font-size: 18px;
+  }
+
+  .backHome {
+    font-size: 16px;
+  }
+}
+
+/* Media query cho các màn hình rất nhỏ (ví dụ: điện thoại) */
+@media screen and (max-width: 480px) {
+  .forgot-container {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Căn giữa theo chiều dọc cho màn hình nhỏ */
+  }
+
+  .image-container-forgot {
+    display: none;
+  }
+
+  .forgot-container {
+    padding: 15px;
+  }
+
+  .forgot-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .input-box-with-icon,
+  .btn-primary-forgot {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .forgot-form h1 {
+    font-size: 24px;
+  }
+
+  .forgot-form p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,127 @@
+.navbar-lt {
+    width: 250px;
+    background-color: #162F4A;
+    color: white;
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.navbar-logo-lt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.logo-navbar-lt {
+    max-width: 80%;
+    width: 90px;
+    height: 90px;
+}
+
+.line-navbar-lt {
+    height: 1px;
+    background-color: #EFD099;
+}
+
+.short-line-lt {
+    flex-grow: 1;
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.long-line-lt {
+    flex-grow: 5;
+    max-width: 300px;
+    margin-left: 10px;
+}
+
+.navbar-menu-lt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.navbar-item-lt {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 15px 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+
+.navbar-item-lt:hover {
+    background-color: #162F4A; /* Không làm đổi màu toàn bộ mục điều hướng */
+}
+
+.navbar-item-lt a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 15px;
+    width: 100%;
+    text-decoration: none;
+    color: inherit; /* Kế thừa màu chữ */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-item-lt a:hover {
+    background-color: #EFD099;
+    color: #162F4A;
+}
+
+.navbar-item-lt a.active {
+    background-color: transparent;
+    color: #EFD099;
+    border: 1.5px solid #d0b17a;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.icon-lt {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.navbar-item-lt span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway';
+}
+
+.navbar-item-lt+.navbar-item-lt {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-admin {
+        width: 200px;
+    }
+
+    .navbar-item span {
+        font-size: 14px;
+    }
+
+    .logo-navbar-admin {
+        width: 120px;
+    }
+}

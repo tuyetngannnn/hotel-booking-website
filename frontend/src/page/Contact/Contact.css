@@ -1,0 +1,242 @@
+/* ----------------------------------------Liên Hệ---------------------------------------- */
+* {
+    box-sizing: border-box;
+    /* Đảm bảo padding và border được tính trong chiều rộng và chiều cao */
+  }
+  
+  .body-lh {
+    margin: 0 150px;
+  }
+  
+  .text-content-body-4 {
+    font-family: 'Montserrat';
+    /* Sử dụng font chữ */
+    font-size: 20px;
+    font-weight: 400;
+    /* Thiết lập kiểu chữ in đậm */
+    margin: 20px 40px;
+    color: #004168;
+  }
+  
+  /* Chi nhánh khác */
+  .other-branche {
+    margin-bottom: 0px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  
+  /* Đường kẻ */
+  .divider {
+    width: 60%;
+    border: 0;
+    height: 2px;
+    background-color: #f5d6a7;
+    /* Màu vàng nhạt giống trong ảnh */
+    margin: 60px auto;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px;
+    gap: 20px;
+  }
+  
+  .map-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .form-container {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: #162f4a;
+    /* Màu chữ */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Căn giữa các phần tử trong form theo chiều ngang */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #004168;
+    border-radius: 15px;
+    font-family: Raleway;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #004168;
+    /* Màu sắc của placeholder */
+    opacity: 1;
+    /* Đảm bảo rằng opacity là 1 để màu hiển thị đúng */
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form button {
+    width: 170px;
+    height: 45px;
+    padding: 15px;
+    background-color: #162F4A;
+    color: #EFD099;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Thêm transition cho hiệu ứng */
+  }
+  
+  .contact-form button:hover {
+    background-color: #1a3b63;
+    /* Thay đổi màu nền khi hover */
+    transform: scale(1.05);
+    /* Tăng kích thước nhẹ khi hover */
+  }
+  
+  .contact-form button span {
+    margin-left: 10px;
+  }
+  
+  .button-send {
+    justify-content: center;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    /* Thay đổi chiều rộng để đảm bảo responsive */
+    height: 455px;
+    /* Giữ chiều cao cố định */
+  }
+  
+  /* Responsive for screens up to 1200px */
+  @media (max-width: 1200px) {
+    .body-lh {
+      margin: 0 50px;
+      /* Giảm khoảng cách ở các bên */
+    }
+  
+    .form-container h2 {
+      font-size: 16px;
+    }
+  
+    .text-content-body-4 {
+      font-size: 18px;
+      /* Giảm kích thước chữ */
+    }
+  
+  }
+  
+  /* Responsive for screens up to 768px */
+  @media (max-width: 768px) {
+    .body-lh {
+      margin: 0 20px;
+      /* Giảm khoảng cách ở các bên */
+    }
+  
+    .text-content-body-4 {
+      font-size: 18px;
+      /* Giảm kích thước chữ */
+      margin: 15px 20px;
+      /* Điều chỉnh khoảng cách */
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      /* Đặt các cột thành hàng dọc */
+      padding: 0;
+      /* Bỏ padding để tiết kiệm không gian */
+    }
+  
+    .map-container,
+    .form-container {
+      margin-right: 0;
+      /* Bỏ lề bên phải */
+      width: 100%;
+      /* Chiếm toàn bộ chiều rộng */
+    }
+  
+    .form-container {
+      padding: 20px 10px;
+      /* Điều chỉnh padding */
+    }
+  
+    .contact-form button {
+      width: 100%;
+      /* Đặt nút gửi chiếm toàn bộ chiều rộng */
+    }
+  }
+  
+  /* Responsive for screens up to 480px */
+  @media (max-width: 480px) {
+    .body-lh {
+      margin: 0 10px;
+      /* Giảm khoảng cách ở các bên */
+    }
+  
+    .text-content-body-4 {
+      font-size: 16px;
+      /* Giảm kích thước chữ */
+      margin: 10px 0;
+      /* Điều chỉnh khoảng cách */
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      /* Đặt các cột thành hàng dọc */
+      padding: 0;
+      /* Bỏ padding để tiết kiệm không gian */
+    }
+  
+    .map-container,
+    .form-container {
+      margin-right: 0;
+      /* Bỏ lề bên phải */
+      width: 100%;
+      /* Chiếm toàn bộ chiều rộng */
+    }
+  
+    .form-container {
+      padding: 10px;
+      /* Điều chỉnh padding */
+    }
+  
+    .contact-form button {
+      width: 100%;
+      /* Đặt nút gửi chiếm toàn bộ chiều rộng */
+    }
+  
+    .divider {
+      width: 60%;
+      border: 0;
+      height: 2px;
+      background-color: #f5d6a7;
+      margin: 40px auto;
+    }
+
+  }

@@ -1,0 +1,243 @@
+/* --------------------------------Phòng----------------------- */
+.body-room {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .text-content-body-room {
+    margin: 0 65px 65px;
+    color: #162F4A;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  /* Lưới phòng */
+  .room-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cột */
+    gap: 50px;
+    justify-content: center;
+    /* Căn giữa lưới */
+  }
+  
+  /* Thẻ phòng */
+  .room-card {
+    border: 2px solid #EFD099;
+    width: 558px;
+    /* Chiều rộng cố định */
+    height: 671px;
+    /* Chiều cao cố định */
+    overflow: hidden;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.2s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Phân chia nội dung đều */
+  }
+  
+  /* Hiệu ứng hover cho thẻ phòng */
+  .room-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Ảnh phòng */
+  .image-room {
+    width: 100%;
+    height: 302px;
+    /* Chiều cao cố định cho ảnh */
+    object-fit: cover;
+    /* Giữ tỷ lệ ảnh và cắt phần dư */
+  }
+  
+  /* Tiêu đề phòng */
+  .room-title {
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #162F4A;
+    text-transform: uppercase;
+  }
+  
+  /* Mô tả phòng */
+  .room-description {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+    color: #162F4A;
+  }
+  
+  /* Thông tin phòng */
+  .room-info {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+    color: #162F4A;
+  }
+  
+  /* Nút Đặt chỗ */
+  .book-button {
+    background-color: #EFD099;
+    color: #162f4a;
+    height: 45px;
+    width: 250px;
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    align-self: center;
+  }
+  
+  /* Hiệu ứng hover cho nút Đặt chỗ */
+  .book-button:hover {
+    background-color: #162F4A;
+    color: #EFD099;
+  }
+  
+  /* Phân trang */
+  .pagination-room {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  
+  /* Nút phân trang */
+  .page-button-room {
+    color: #162F4A;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px #EFD099;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .page-button-room:hover {
+    background-color: #FEF8E8;
+  }
+  
+  /* Nút phân trang đang hoạt động (chỉ dành cho số trang) */
+  .page-number-room.active {
+    background-color: #EFD099;
+    color: #162F4A;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  /* Nút không hoạt động (nút "Trước" và "Sau") */
+  .page-button-room:disabled {
+    color: #162F4A;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: transparent;
+    border: solid 2px #EFD099;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .body-room {
+      width: 95%;
+      /* Giảm chiều rộng cho màn hình nhỏ */
+      padding: 20px 0;
+      /* Giảm padding */
+    }
+  
+    .text-content-body-room {
+      margin: 0 30px 30px;
+      /* Giảm margin */
+      font-size: 18px;
+      /* Giảm kích thước chữ */
+    }
+  
+    .room-grid {
+      grid-template-columns: 1fr;
+      /* Chuyển sang 1 cột trên màn hình nhỏ */
+      gap: 30px;
+      /* Giảm khoảng cách giữa các thẻ phòng */
+    }
+  
+    .room-card {
+      width: 100%;
+      /* Thẻ phòng chiếm 100% chiều rộng */
+      height: auto;
+      /* Chiều cao tự động */
+    }
+  
+    .room-title {
+      font-size: 22px;
+      /* Giảm kích thước chữ tiêu đề */
+    }
+  
+    .room-description,
+    .room-info {
+      font-size: 15px;
+      margin: 10px;
+    }
+  
+    .book-button {
+      width: 100%;
+      /* Nút Đặt chỗ chiếm 100% chiều rộng */
+      font-size: 18px;
+      /* Giảm kích thước chữ */
+    }
+  
+    .pagination-room {
+      flex-wrap: wrap;
+      /* Cho phép phân trang xuống dòng */
+    }
+  
+    .page-button-room {
+      font-size: 16px;
+      /* Giảm kích thước chữ */
+    }
+  
+    .page-number-room.active {
+      font-size: 18px;
+      /* Giảm kích thước chữ cho nút hoạt động */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-content-body-room {
+      font-size: 16px;
+      /* Giảm kích thước chữ thêm cho màn hình rất nhỏ */
+    }
+  
+    .room-title {
+      font-size: 20px;
+      /* Giảm kích thước chữ tiêu đề thêm */
+    }
+  
+    .book-button {
+      font-size: 16px;
+      /* Giảm kích thước chữ nút */
+    }
+  
+    .page-button {
+      font-size: 14px;
+      /* Giảm kích thước chữ nút phân trang */
+    }
+  
+    .pagination-room {
+      margin-top: 25px;
+    }
+  }
+  
+  

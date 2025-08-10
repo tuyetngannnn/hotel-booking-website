@@ -1,0 +1,385 @@
+.body-user-listbooking {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 16px;
+  flex-direction: row;
+}
+
+.booking-user-list {
+  flex: 1;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.booking-user-list h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #004168;
+  margin-bottom: 20px;
+  font-family: 'Platfair Display';
+  text-align: center;
+}
+
+.booking-table-user {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table-user th,
+.booking-table-user td {
+  padding: 10px;
+  font-family: 'Monserrat';
+  font-size: 18px;
+  color: #004168;
+  border-bottom: 1px solid #EFD099;
+  height: 70px;
+}
+
+.booking-table-user th {
+  background-color: #EFD099;
+  color: #004168;
+  font-family: 'Raleway';
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Specific to the first and last header cells */
+.booking-table-user th:first-child {
+  border-top-left-radius: 8px;
+  /* Top-left corner rounding */
+}
+
+.booking-table-user th:last-child {
+  border-top-right-radius: 8px;
+  /* Top-right corner rounding */
+}
+
+.booking-table-user td {
+  text-align: center;
+}
+
+.btn-detail-booking-user {
+  border: solid 2px #EFD099;
+  border-radius: 5px;
+  padding: 10px;
+  color: #004168;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Monserrat';
+  text-align: center;
+  margin: 2px 0;
+}
+
+
+.btn-detail-booking-user:hover {
+  color: #004168;
+  background-color: #EFD099;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .body-user-listbooking {
+    padding: 12px;
+    flex-direction: column;
+  }
+
+  .booking-user-list h1 {
+    font-size: 30px;
+  }
+
+  .booking-table-user th,
+  .booking-table-user td {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .btn-detail-booking-user {
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-user-listbooking {
+    flex-direction: column;
+  }
+
+  .navbar-history {
+    flex: 0 0 auto;
+    margin-right: 0;
+    margin-bottom: 16px;
+    height: fit-content;
+  }
+
+  .booking-user-list h1 {
+    font-size: 28px;
+  }
+
+  .booking-table-user th,
+  .booking-table-user td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn-detail-booking-user {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-user-list h1 {
+    font-size: 20px;
+  }
+
+  .booking-table-user th,
+  .booking-table-user td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .btn-detail-booking-user {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+
+
+
+.booking-table-user-detail {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table-user-detail td {
+  padding: 10px;
+  font-family: 'Monserrat';
+  font-size: 18px;
+  color: #004168;
+  border-bottom: 1px solid #EFD099;
+  height: 70px;
+}
+
+.booking-table-user-detail td {
+  text-align: start;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 40px;
+  width: 600px;
+  max-width: 90%;
+  border: 3px solid #EFD099;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  margin: auto;
+  max-height: 100vh; /* Giới hạn chiều cao của modal */
+  overflow-y: auto; /* Cho phép cuộn dọc khi nội dung vượt quá chiều cao */
+}
+
+/* Tùy chỉnh thanh cuộn */
+.modal-content::-webkit-scrollbar {
+  width: 8px; /* Độ rộng của thanh cuộn */
+}
+
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của đường đi thanh cuộn */
+  border-radius: 4px; /* Bo góc cho đường đi */
+}
+
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1; /* Màu của thanh cuộn */
+  border-radius: 4px; /* Bo góc cho thanh cuộn */
+  border: 2px solid #f1f1f1; /* Khoảng cách giữa thanh cuộn và đường đi */
+}
+
+
+.modal-contentt::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8; /* Màu của thanh cuộn khi hover */
+}
+
+
+.modal-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #004168;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.label-text {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Raleway';
+  color: #004168;
+  margin-bottom: 5px;
+}
+
+.modal-submit-button {
+  background-color: #004168;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Raleway';
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal-submit-button:hover {
+  background-color: #EFD099;
+  color: #004168;
+}
+
+.btn-content-user {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-booking-yc {
+  background-color: #004168;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Playfair Display';
+}
+
+.btn-booking-yc:hover {
+  background-color: #EFD099;
+  color: #004168;
+}
+
+.services-booking {
+  max-height: 80vh; /* Chiều cao tối đa của danh sách */
+  overflow-y: auto; /* Tạo thanh cuộn dọc khi danh sách quá dài */
+  padding-right: 10px; /* Khoảng cách bên phải để tránh che khuất nội dung */
+}
+
+
+/* Tùy chỉnh thanh cuộn */
+.services-booking::-webkit-scrollbar {
+  width: 8px; /* Độ rộng của thanh cuộn */
+}
+
+
+.services-booking::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của đường đi thanh cuộn */
+  border-radius: 4px; /* Bo góc cho đường đi */
+}
+
+
+.services-booking::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1; /* Màu của thanh cuộn */
+  border-radius: 4px; /* Bo góc cho thanh cuộn */
+  border: 2px solid #f1f1f1; /* Khoảng cách giữa thanh cuộn và đường đi */
+}
+
+
+.services-booking::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8; /* Màu của thanh cuộn khi hover */
+}
+.services-booking label {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  color: var(--blue);
+}
+.services-booking ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: 0.3s, transform 0.3s;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.services-booking ul:hover {
+  background-color: #f0f0f0; /* Màu nền khi hover */
+  transform: scale(1.02); /* Phóng to một chút khi hover */
+}
+.services-booking ul.selected {
+  background-color: var(--yellow); /* Màu nền khi tick */
+  border: none;
+}
+
+
+.services-booking input[type="checkbox"] {
+  transform: scale(1.5); /* Thay đổi kích thước checkbox */
+  margin-right: 10px; /* Khoảng cách giữa checkbox và label */
+  cursor: pointer; /* Thay đổi con trỏ khi hover */
+  accent-color: var(--blue);
+}
+.services-booking span {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: var(--blue);
+}
+.services-booking .service-item,
+.services-booking .equipment-item {
+  display: flex; /* Sử dụng flexbox để căn chỉnh tên và giá */
+  justify-content: space-between; /* Căn giữa giữa tên và giá */
+  padding: 10px; /* Khoảng cách bên trong cho mỗi mục */
+  border-bottom: 1px solid #ccc; /* Viền dưới cho mỗi mục */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp cho màu nền */
+}
+
+
+.services-booking .service-item:last-child,
+.services-booking .equipment-item:last-child {
+  border-bottom: none; /* Loại bỏ viền dưới cho mục cuối cùng */
+}
+
+.service-name,
+.equipment-name {
+  flex: 1; /* Chiếm không gian còn lại cho tên */
+  font-size: 16px; /* Kích thước chữ */
+  font-family: "Raleway"; /* Font chữ */
+  color: var(--blue); /* Màu chữ cho tên */
+}
+
+
+.service-price,
+.equipment-price {
+  white-space: nowrap; /* Ngăn ngừa ngắt dòng trong giá */
+  margin-left: 10px; /* Khoảng cách giữa tên và giá */
+  font-size: 16px; /* Kích thước chữ cho giá */
+  font-family: "Raleway"; /* Font chữ */
+  color: var(--blue); /* Màu chữ cho giá */
+  font-weight: bold; /* In đậm giá */
+}

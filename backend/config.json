@@ -1,0 +1,3 @@
+{
+    "connectionString": "mongodb+srv://6bagshospital:${process.env.MONGO_db}@managehospital.juraj.mongodb.net/?retryWrites=true&w=majority&appName=ManageHospital"
+}

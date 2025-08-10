@@ -1,0 +1,193 @@
+/* Đặt bố cục 2 cột với flexbox */
+.admin-layout {
+    display: flex;
+    height: 100vh;
+    /* Chiều cao 100% màn hình */
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  /* Top bar */
+  .top-bar-admin{
+    /* padding: 20px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .home-manager-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: solid 1.5px #EFD099;
+    border-radius: 20px;
+    margin-left: 272px;
+    overflow-y: auto;
+    display: flex;
+  }
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .status-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-rows: auto auto auto; /* Three rows */
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .status-box {
+    height: 190px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .status-box h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .status-box p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 8px;
+  }
+  
+  .status-box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Make booking-form span two rows */
+  .booking-form {
+    grid-column: 3 / 4; /* Place it in the third column */
+    grid-row: 2 / 4; /* Span the second and third rows */
+    padding: 20px;
+    border: solid 2px #efd099;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    height: 400px;
+  }
+  
+  .booking-form h3 {
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    color: #004168;
+    text-align: center;
+  }
+  
+  .button-group {
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-checkin-out {
+    flex: 1;
+    padding: 10px;
+    /* background-color: #004168; */
+    color: #004168;
+    border: solid 2px #004168;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-checkin-out:hover {
+    background-color: #FEF8E8;
+    color: #004168;
+  }
+  
+  .btn-checkin-out.active {
+    background-color: #004168;
+    color: white;
+  }
+  
+  .booking-form input[type="text"], .booking-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .booking-btn-admin {
+    padding: 10px;
+    background-color: #004168;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .booking-btn-admin:hover {
+    background-color: #efd099;
+    color: #162f4a;
+  }
+  
+  .message {
+    color: #ff4d4f;
+    font-size: 14px;
+    text-align: start;
+  }
+  
+  .status-box.chua-xac-nhan {
+    background-color: #FFF4E5; /* Light orange */
+    color: #FF9900; /* Darker orange for the icon and text */
+  }
+  
+  .status-box.da-xac-nhan {
+    background-color: #E6FFE6; /* Light green */
+    color: #00B200; /* Darker green */
+  }
+  
+  .status-box.huy-yeu-cau {
+    background-color: #E6F7FF; /* Light blue */
+    color: #00A6FF; /* Darker blue */
+  }
+  
+  .status-box.da-nhan-phong {
+    background-color: #FCE4EC; /* Light pink */
+    color: #FF4081; /* Pink */
+  }
+  
+  .status-box.da-tra-phong {
+    background-color: #FFF9E6; /* Pale yellow */
+    color: #FF9800; /* Amber */
+  }
+  
+  .status-box.da-huy {
+    background-color: #E8F4FF; /* Light blue */
+    color: #2196F3; /* Blue */
+  }
+  
+  .status-box.yeu-cau-dat-them {
+    background-color: #FFF0F0; /* Light red */
+    color: #F44336; /* Red */
+  }
+  
+  .status-box svg {
+    font-size: 24px; /* Adjust icon size */
+    margin-bottom: 8px; /* Space between icon and text */
+  }

@@ -1,0 +1,144 @@
+@import "../../../App.css";
+.messages-container {
+  font-family: "Arial", sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Tiêu đề trang */
+.messages-container h1 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--blue);
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Bố cục chính */
+.messages-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Thanh điều hướng bên phải */
+.messages-nav {
+  flex: 0 0 200px;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  padding: 15px;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 20px; /* Điều chỉnh khoảng cách từ phía trên */
+  margin-left: 50px;
+  z-index: 10; /* Đảm bảo thanh nav ở trên cùng nếu có các yếu tố khác */
+}
+
+.messages-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messages-nav li {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.messages-nav li:hover {
+  color: var(--yellow);
+  font-weight: bold;
+}
+.messages-nav ul li.active {
+  color: var(--yellow);
+  font-weight: bold;
+}
+/* Danh sách tin nhắn bên trái */
+.messages-list {
+  flex: 1;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+}
+
+/* Định dạng thẻ tin nhắn */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 20px;
+  border-bottom: 1px solid var(--blue);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.01); /* Phóng to 5% khi hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ khi hover */
+}
+.card .details {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card .details p {
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-family: "Raleway";
+  font-size: 18px;
+  color: var(--blue);
+}
+
+.card .details span {
+  font-weight: bold;
+  font-family: "Raleway";
+  font-size: 18px;
+  color: var(--blue);
+}
+
+/* Nút trả lời */
+.card .details button {
+  background-color: var(--blue);
+  color: var(--yellow);
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: "Raleway";
+  font-size: 18px;
+}
+
+.card .details button:hover {
+  background-color: var(--yellow);
+  color: var(--blue);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .messages-layout {
+    flex-direction: column;
+  }
+
+  .messages-nav {
+    margin-bottom: 20px;
+  }
+
+  .messages-list {
+    padding: 10px;
+  }
+
+  .messages-nav li {
+    font-size: 1rem;
+  }
+}

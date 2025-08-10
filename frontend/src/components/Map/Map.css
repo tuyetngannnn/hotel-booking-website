@@ -1,0 +1,22 @@
+.maphotel {
+    width: 100%;
+    height: 500px; /* Chiều cao mặc định */
+}
+
+@media (max-width: 1024px) {
+    .maphotel {
+        height: 400px; /* Chiều cao cho màn hình nhỏ hơn 1024px */
+    }
+}
+
+@media (max-width: 768px) {
+    .maphotel {
+        height: 300px; /* Chiều cao cho màn hình nhỏ hơn 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .maphotel {
+        height: 200px; /* Chiều cao cho màn hình nhỏ hơn 480px */
+    }
+}
